@@ -44,7 +44,7 @@ header h1 {
   }
 
 .banner {
-    background-image: url(../pattern.webp);
+    background-image: url("../pattern.webp");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -127,7 +127,7 @@ figcaption {
 }
 
 footer {
-    background-image: url(../pattern.webp);
+    background-image: url("../pattern.webp");
     background-size: cover;
     text-align: right;
     padding: 60px 60px;
