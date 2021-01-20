@@ -43,12 +43,12 @@ header {
     justify-content: center;
     margin-bottom: 60px;
     width: 100%;
-    height: 200px;
+    height: 300px;
   }
 
 header h1 {
     font-family: 'East Sea Dokdo', cursive;
-    font-size: 80px;
+    font-size: 70px;
     color: #2B2623;
     text-align: center;
     margin: auto;
@@ -58,6 +58,7 @@ header h1 {
     background-size: 100% 4em;
     padding: 10px 40px;
     font-size: 1.5rem;
+    color: whitesmoke;
   }
 .brushes h2 {
     background-color: #EB7492;
@@ -73,18 +74,18 @@ figure {
     width: 300px;
     height: 350px;
     margin-left: 60px;
-    margin-top: 40px;
+    margin-top: 20px;
     margin-right: 40px;
 }
+
 img {
-    min-width: 200px;
     display: flex;
     justify-items: center;
 }
 figcaption {
     text-align: center;
-    line-height: 1em;
     padding: 0;
+    margin: 0;
 }
 
 #inlineflex {
@@ -93,12 +94,13 @@ figcaption {
 
 #inlineflex p {
     align-self: center;
+    padding-right: 60px;
 }
 
 #prices {
     font-size: 1.2em;
     font-weight: 700;
-    color:olive;
+    color:tomato;
 }
 
 .contact {
@@ -115,7 +117,7 @@ figcaption {
 }
 
 footer {
-    background-image: url("../pattern.webp");
+    background-image: url("https://content.codecademy.com/courses/freelance-1/unit-2/pattern.jpeg");
     background-size: cover;
     text-align: right;
     padding: 60px 60px;
@@ -130,20 +132,276 @@ a:hover {
     color: mediumturquoise;
 }
 
-@media screen and (max-width: 600px) 
-and (min-width: 370px) {
+@media screen and (max-width: 420px) 
+and (min-width: 300px) {
+    header {
+        height: 80px;
+        margin-bottom: -20px;
+    }
+
     .banner h1 {
-        font-size: 22px;
+        font-size: 1.8rem;
+    }
+
+    .brushes h2, 
+    .frames h2, 
+    .paint h2 {
+        font-size: 0.8rem;
+        padding-left: 20px;
+        padding-top: 0.25rem;
+        padding-bottom: 0.25rem;
+        margin-top: 40px;
+    }
+
+    img {
+        width: 120px;
+        height: 120px;
+        margin: auto;
     }
 
     figure {
-        width: 200px;
+        width: 100%;
+        height: fit-content;
+        margin-top: 20px;
+        margin-left: 0%;
+        margin-right: 0%;
+        margin-bottom: 0%;
+        text-align: center;
+    }
+
+    figcaption {
+        font-size: 0.6rem;
     }
 
     #inlineflex {
         display: block;
     }
-    div p {
-        padding-left: 30px;
+
+    #inlineflex p {
+        font-size: 0.6rem;
+        padding: 5px 20px;
+    }
+
+    p #prices {
+        width: 100%;
+        font-size: 0.6rem;
+        text-align: center;
+    }
+
+    .contact {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        font-size: 0.8rem;
+    }
+
+    footer {
+        padding: 20px 20px;
+        font-size: 0.8rem;
+        font-weight: 700;
+    }
+}
+
+@media screen and (min-width: 370px) 
+and (max-width: 420px) and (min-height: 660) 
+and (max-height: 820px) {
+    header {
+        height: 80px;
+        margin-bottom: -20px;
+    }
+
+    .banner h1 {
+        font-size: 0.5rem;
+    }
+
+    .brushes h2, 
+    .frames h2, 
+    .paint h2 {
+        font-size: 0.8rem;
+        padding-left: 20px;
+        padding-top: 0.25rem;
+        padding-bottom: 0.25rem;
+        margin-top: 40px;
+    }
+
+    img {
+        width: 120px;
+        height: 120px;
+        margin: auto;
+    }
+
+    figure {
+        width: 100%;
+        height: fit-content;
+        margin-top: 20px;
+        margin-left: 0%;
+        margin-right: 0%;
+        margin-bottom: 0%;
+        text-align: center;
+    }
+
+    figcaption {
+        font-size: 0.6rem;
+    }
+
+    #inlineflex {
+        display: block;
+    }
+
+    #inlineflex p {
+        font-size: 0.6rem;
+        padding: 5px 20px;
+    }
+
+    p #prices {
+        width: 100%;
+        font-size: 0.6rem;
+        text-align: center;
+    }
+
+    .contact {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        font-size: 0.8rem;
+    }
+
+    footer {
+        padding: 20px 20px;
+        font-size: 0.8rem;
+        font-weight: 700;
+    }
+}
+
+@media only screen and (width: 540px) 
+and (height: 720px) {
+    header {
+        height: 120px;
+        margin-bottom: -20px;
+    }
+
+    .banner h1 {
+        font-size: 2.5rem;
+    }
+
+    .brushes h2, 
+    .frames h2, 
+    .paint h2 {
+        font-size: 1rem;
+        padding-left: 20px;
+        padding-top: 0.25rem;
+        padding-bottom: 0.25rem;
+        margin-top: 40px;
+    }
+
+    img {
+        width: 160px;
+        height: 160px;
+        margin-left: 60px;
+        margin-right: 60px;
+    }
+
+    figure {
+        width: 100%;
+        height: fit-content;
+        margin-top: 20px;
+        margin-left: 0%;
+        margin-right: 0%;
+        margin-bottom: 0%;
+        text-align: center;
+    }
+
+    figcaption {
+        width: 100%;
+        font-size: 0.8rem;
+        text-align: center;
+    }
+
+    #inlineflex p {
+        font-size: 0.8rem;
+    }
+
+    p #prices {
+        font-size: 0.8rem;
+    }
+
+    .contact {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        font-size: 0.8rem;
+    }
+
+    footer {
+        padding: 20px 20px;
+        font-size: 1rem;
+        font-weight: 700;
+    }
+}
+
+@media only screen and (width: 280px) 
+and (height: 653px) {
+    header {
+        height: 80px;
+        margin-bottom: -20px;
+    }
+
+    .banner h1 {
+        font-size: 1.4rem;
+    }
+
+    .brushes h2, 
+    .frames h2, 
+    .paint h2 {
+        font-size: 0.6rem;
+        padding-left: 20px;
+        padding-top: 0.25rem;
+        padding-bottom: 0.25rem;
+        margin-top: 40px;
+    }
+
+    img {
+        width: 120px;
+        height: 120px;
+        margin: auto;
+    }
+
+    figure {
+        width: 100%;
+        height: fit-content;
+        margin-top: 20px;
+        margin-left: 0%;
+        margin-right: 0%;
+        margin-bottom: 0%;
+        text-align: center;
+    }
+
+    figcaption {
+        width: 100%;
+        font-size: 0.4rem;
+        text-align: center;
+    }
+
+
+    #inlineflex {
+        display: block;
+    }
+
+    #inlineflex p {
+        font-size: 0.6rem;
+        padding: 2px 30px;
+    }
+
+    p #prices {
+        font-size: 0.6rem;
+    }
+
+    .contact {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        font-size: 0.7rem;
+    }
+
+    footer {
+        padding: 20px 20px;
+        font-size: 0.6rem;
+        font-weight: 700;
     }
 }
